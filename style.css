@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Palette des couleurs */
+html {
+    --bleu-principal: #5d88ff;
+    --blue-primary: #0D6EFD;
+    --bleu-fonce: #0b2c6d;
+    --bleu-clair: #5fa8ff;
+    --bg-light: #f0f4ff;
+    --blanc-pur: #fff;
+    --blanc-ancre: #f4f7fb;
+    --gris-texte: #2e2e2e;
+    --argent: #c9ced6;
+    --or-doux: #d4af37;
+    --success: #2ecc71;
+    --warnings: #f1c40f;
+    --danger: #e74c3c; 
+}
+
+/* Bootstrap fonts icons */
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("assets/bootstrap-icons-1.13.1/fonts/bootstrap-icons.woff") format("woff"),
+         url("assets/bootstrap-icons-1.13.1/fonts/bootstrap-icons.woff2") format("woff2");
+}
+
+body{
+    font-family: Poppins,Roboto, sans-serif;
+    background-color: var(--var-bg-light);
+}
+
+#header {
+    position: sticky;
+}
+
+.shadow-header {
+    box-shadow: 
+        0 1px 2px rgba(0, 0, 0, 0.18),
+        0 6px 12px rgba(0, 0, 0, .08);
+}
+
+.title {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.offcanvas {
+    --bs-offcanvas-width : 30rem;
+}
+
+.navbar .nav-link {
+    --bs-nav-link-font-weight : 500;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: var(--blue-primary);
+}
+
+.btn-espace-eleve {
+    border-color: var(--blue-primary);
+    color: var(--blue-primary);
+    
+}
+
+.btn-espace-eleve:hover {
+    background-color: var(--blue-primary);
+    color: white;
+    font-weight: 500;
+}
+
+.btn-inscrire:hover {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn-second {
+    border-color: black;
+    color: black;
+}
+
+.card, .bi{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bi {
+    font-size: 2.5rem;
+}
+
+.card:hover {
+
+    .bi{
+        width: 2.8rem;
+        height: 2.8rem;
+    } 
+
+}
+
+/* à la une */
+
+
+.carousel-item {
+    height: 75vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+.titre-actualite, .titre-activite {
+    font-weight: 600;
+}
+
+.ligne {
+    background-color: var(--blue-primary);
+    border: solid;
+    border-color: var(--blue-primary);
+    text-decoration: 0.5rem overline ;
+}
+
+.card-title-activite {
+    font-weight: 600;
+    
+}
+
+
+
+
+
+
